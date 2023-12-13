@@ -121,66 +121,74 @@
     mapping> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-29><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|7<space|2spc>Decomposizione
-    bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|7<space|2spc>Perceptron>
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-30><vspace|0.5fn>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|8<space|2spc>Regolariazzione:
+    <with|par-left|1tab|7.1<space|2spc>Perceptron: Training
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-31>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|8<space|2spc>Decomposizione
+    bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-32><vspace|0.5fn>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Regolariazzione:
     Migliorare la generalizzazione dei modelli>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31><vspace|0.5fn>
+    <no-break><pageref|auto-33><vspace|0.5fn>
 
-    <with|par-left|1tab|8.1<space|2spc>Regolarizzazione: Approccio classico
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>
-
-    <with|par-left|1tab|8.2<space|2spc>Regolarizzazione: Altri approcci
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33>>
-
-    <with|par-left|2tab|8.2.1<space|2spc>Dataset augmentation
+    <with|par-left|1tab|9.1<space|2spc>Regolarizzazione: Approccio classico
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-34>>
 
-    <with|par-left|2tab|8.2.2<space|2spc>Noise injection
+    <with|par-left|1tab|9.2<space|2spc>Regolarizzazione: Altri approcci
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-35>>
 
-    <with|par-left|2tab|8.2.3<space|2spc>Early stopping
+    <with|par-left|2tab|9.2.1<space|2spc>Dataset augmentation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-36>>
 
-    <with|par-left|2tab|8.2.4<space|2spc>Bagging
+    <with|par-left|2tab|9.2.2<space|2spc>Noise injection
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-37>>
 
-    <with|par-left|2tab|8.2.5<space|2spc>Boosting
+    <with|par-left|2tab|9.2.3<space|2spc>Early stopping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-38>>
 
-    <with|par-left|2tab|8.2.6<space|2spc>Dropout
+    <with|par-left|2tab|9.2.4<space|2spc>Bagging
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-39>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Metriche
-    di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-40><vspace|0.5fn>
+    <with|par-left|2tab|9.2.5<space|2spc>Boosting
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-40>>
 
-    <with|par-left|1tab|9.1<space|2spc>Confusion matrix
+    <with|par-left|2tab|9.2.6<space|2spc>Dropout
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-41>>
 
-    <with|par-left|1tab|9.2<space|2spc>Falsi positivi e falsi negativi
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Metriche
+    di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-42><vspace|0.5fn>
+
+    <with|par-left|1tab|10.1<space|2spc>Confusion matrix
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42>>
+    <no-break><pageref|auto-43>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Clustering
-    - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-43><vspace|0.5fn>
-
-    <with|par-left|1tab|10.1<space|2spc>Determinare il valore ottimo di K
-    -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <with|par-left|1tab|10.2<space|2spc>Falsi positivi e falsi negativi
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-44>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Clustering
+    - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-45><vspace|0.5fn>
+
+    <with|par-left|1tab|11.1<space|2spc>Determinare il valore ottimo di K
+    -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-46>>
   </table-of-contents>
 
   <new-page>
@@ -1194,6 +1202,46 @@
     <space|3em><math|w<rsub|j>\<leftarrow\>w<rsub|j>+<around*|(|t<rsup|<around*|(|i|)>>-y<rsup|<around*|(|i|)>>|)>x<rsub|j><rsup|<around*|(|i|)>>>
   </algorithm>
 
+  <subsection|Perceptron e SDG>
+
+  Consideriamo per l'istanza <math|<around*|(|x<rsup|<around*|(|i|)>>,t<rsup|<around*|(|i|)>>|)>>
+  la loss function:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<frak-L\><rsup|<around*|(|i|)>><rsub|0/1>>|<cell|=>|<cell|<frac|1|2><around*|(|t<rsup|<around*|(|i|)>>-sgn<around*|{|w<rsup|T>*x<rsup|<around*|(|i|)>>|}>|)><rsup|2>>>|<row|<cell|>|<cell|=>|<cell|<frac|1|2>*<around*|(|<around*|(|t<rsup|<around*|(|i|)>>|)><rsup|2>-2*t<rsup|<around*|(|i|)>>*sgn<around*|{|w<rsup|T>*x<rsup|<around*|(|i|)>>|}>+<around*|(|sgn<around*|{|w<rsup|T>*x<rsup|<around*|(|i|)>>|}>|)><rsup|2>|)>>>>>
+  </eqnarray*>
+
+  Dato che:
+
+  <\itemize>
+    <item><math|t<rsup|<around*|(|i|)>>\<in\><around*|{|-1,1|}>\<rightarrow\><around*|(|t<rsup|<around*|(|i|)>>|)><rsup|2>=1>
+
+    <item><math|sgn<around*|{|w<rsup|T>*x<rsup|<around*|(|i|)>>|}>\<in\><around*|{|-1,1|}>\<rightarrow\><around*|(|sgn<around*|{|w<rsup|T>*x<rsup|<around*|(|i|)>>|}>|)><rsup|2>=1>
+  </itemize>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<frak-L\><rsup|<around*|(|i|)>><rsub|0/1>>|<cell|=>|<cell|<frac|1|2><around*|(|2-2*t<rsup|<around*|(|i|)>>sgn<around*|(|<around*|{|w<rsup|T>*x|}>|)>|)>>>|<row|<cell|>|<cell|=>|<cell|<around*|(|1-t<rsup|<around*|(|i|)>>sgn<around*|(|<around*|{|w<rsup|T>*x|}>|)>|)>>>>>
+  </eqnarray*>
+
+  Dato che la funzione segno ci da problemi di differenziabilità e quindi per
+  l'applicazione di SDG, consideriamo una <with|font-series|bold|smoothed
+  surrogate loss function>:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<frak-L\><rsup|<around*|(|i|)>>>|<cell|=>|<cell|max<around*|{|0,-t<rsup|<around*|(|i|)>>*<around*|(|w<rsup|T>*x<rsup|<around*|(|i|)>>|)>|}>>>|<row|<cell|\<frak-L\>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|N>max<around*|{|0,-t<rsup|<around*|(|i|)>>*<around*|(|w<rsup|T>*x<rsup|<around*|(|i|)>>|)>|}>>>>>
+  </eqnarray*>
+
+  Possiamo utilizzare il gradiente di questa loss function per gli
+  aggiornamenti dei pesi nell'algoritmo SGD e quindi:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<nabla\><rsub|w>\<frak-L\><rsup|<around*|(|i|)>>>|<cell|=>|<cell|<around*|(|y<rsup|<around*|(|i|)>>-t<rsup|<around*|(|i|)>>|)>*x<rsup|<around*|(|i|)>>>>|<row|<cell|w>|<cell|\<leftarrow\>>|<cell|w-\<eta\>*\<nabla\><rsub|w>*\<frak-L\><rsup|<around*|(|i|)>>>>>>
+  </eqnarray*>
+
+  <\remark>
+    Per <math|\<eta\>=1> torniamo agli aggiornamenti classici del perceptron.
+  </remark>
+
   <section|Decomposizione bias-varianza>
 
   Assumiamo che: <math|t=g<around*|(|x|)>+\<epsilon\>>, dove
@@ -1825,23 +1873,24 @@
     <associate|auto-29|<tuple|6|16>>
     <associate|auto-3|<tuple|1.2|3>>
     <associate|auto-30|<tuple|7|16>>
-    <associate|auto-31|<tuple|7.1|16>>
-    <associate|auto-32|<tuple|8|16>>
-    <associate|auto-33|<tuple|9|17>>
-    <associate|auto-34|<tuple|9.1|17>>
-    <associate|auto-35|<tuple|9.2|17>>
-    <associate|auto-36|<tuple|9.2.1|18>>
-    <associate|auto-37|<tuple|9.2.2|19>>
-    <associate|auto-38|<tuple|9.2.3|20>>
-    <associate|auto-39|<tuple|9.2.4|21>>
+    <associate|auto-31|<tuple|7.1|17>>
+    <associate|auto-32|<tuple|7.2|17>>
+    <associate|auto-33|<tuple|8|17>>
+    <associate|auto-34|<tuple|9|17>>
+    <associate|auto-35|<tuple|9.1|18>>
+    <associate|auto-36|<tuple|9.2|18>>
+    <associate|auto-37|<tuple|9.2.1|18>>
+    <associate|auto-38|<tuple|9.2.2|18>>
+    <associate|auto-39|<tuple|9.2.3|19>>
     <associate|auto-4|<tuple|1.3|3>>
-    <associate|auto-40|<tuple|9.2.5|21>>
-    <associate|auto-41|<tuple|9.2.6|22>>
-    <associate|auto-42|<tuple|10|22>>
-    <associate|auto-43|<tuple|10.1|23>>
-    <associate|auto-44|<tuple|10.2|24>>
-    <associate|auto-45|<tuple|11|?>>
-    <associate|auto-46|<tuple|11.1|?>>
+    <associate|auto-40|<tuple|9.2.4|21>>
+    <associate|auto-41|<tuple|9.2.5|22>>
+    <associate|auto-42|<tuple|9.2.6|22>>
+    <associate|auto-43|<tuple|10|22>>
+    <associate|auto-44|<tuple|10.1|23>>
+    <associate|auto-45|<tuple|10.2|24>>
+    <associate|auto-46|<tuple|11|25>>
+    <associate|auto-47|<tuple|11.1|?>>
     <associate|auto-5|<tuple|1.3.1|3>>
     <associate|auto-6|<tuple|1.3.2|3>>
     <associate|auto-7|<tuple|1.3.3|3>>
@@ -1975,66 +2024,74 @@
       mapping> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-29><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Decomposizione
-      bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Perceptron>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-30><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Regolariazzione:
+      <with|par-left|<quote|1tab>|7.1<space|2spc>Perceptron: Training
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-31>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Decomposizione
+      bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-32><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Regolariazzione:
       Migliorare la generalizzazione dei modelli>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31><vspace|0.5fn>
+      <no-break><pageref|auto-33><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|8.1<space|2spc>Regolarizzazione: Approccio
+      <with|par-left|<quote|1tab>|9.1<space|2spc>Regolarizzazione: Approccio
       classico <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>
-
-      <with|par-left|<quote|1tab>|8.2<space|2spc>Regolarizzazione: Altri
-      approcci <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-33>>
-
-      <with|par-left|<quote|2tab>|8.2.1<space|2spc>Dataset augmentation
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-34>>
 
-      <with|par-left|<quote|2tab>|8.2.2<space|2spc>Noise injection
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|9.2<space|2spc>Regolarizzazione: Altri
+      approcci <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-35>>
 
-      <with|par-left|<quote|2tab>|8.2.3<space|2spc>Early stopping
+      <with|par-left|<quote|2tab>|9.2.1<space|2spc>Dataset augmentation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-36>>
 
-      <with|par-left|<quote|2tab>|8.2.4<space|2spc>Bagging
+      <with|par-left|<quote|2tab>|9.2.2<space|2spc>Noise injection
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-37>>
 
-      <with|par-left|<quote|2tab>|8.2.5<space|2spc>Boosting
+      <with|par-left|<quote|2tab>|9.2.3<space|2spc>Early stopping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-38>>
 
-      <with|par-left|<quote|2tab>|8.2.6<space|2spc>Dropout
+      <with|par-left|<quote|2tab>|9.2.4<space|2spc>Bagging
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-39>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Metriche
-      di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40><vspace|0.5fn>
+      <with|par-left|<quote|2tab>|9.2.5<space|2spc>Boosting
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-40>>
 
-      <with|par-left|<quote|1tab>|9.1<space|2spc>Confusion matrix
+      <with|par-left|<quote|2tab>|9.2.6<space|2spc>Dropout
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-41>>
 
-      <with|par-left|<quote|1tab>|9.2<space|2spc>Falsi positivi e falsi
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Metriche
+      di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-42><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|10.1<space|2spc>Confusion matrix
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-43>>
+
+      <with|par-left|<quote|1tab>|10.2<space|2spc>Falsi positivi e falsi
       negativi <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42>>
-
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Clustering
-      - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43><vspace|0.5fn>
-
-      <with|par-left|<quote|1tab>|10.1<space|2spc>Determinare il valore
-      ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-44>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Clustering
+      - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-45><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|11.1<space|2spc>Determinare il valore
+      ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-46>>
     </associate>
   </collection>
 </auxiliary>
