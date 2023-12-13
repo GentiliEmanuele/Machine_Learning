@@ -8,176 +8,182 @@
     neighbor methods> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-1><vspace|0.5fn>
 
-    <with|par-left|1tab|1.1<space|2spc>Insidie dell'algoritmo NN/KNN
+    <with|par-left|1tab|1.1<space|2spc>Cross validation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-2>>
 
-    <with|par-left|2tab|1.1.1<space|2spc>Curse of dimensionality
+    <with|par-left|1tab|1.2<space|2spc>K-fold cross validation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-3>>
 
-    <with|par-left|2tab|1.1.2<space|2spc>Normalizzazione
+    <with|par-left|1tab|1.3<space|2spc>Insidie dell'algoritmo NN/KNN
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-4>>
 
-    <with|par-left|2tab|1.1.3<space|2spc>Costi computazionali
+    <with|par-left|2tab|1.3.1<space|2spc>Curse of dimensionality
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-5>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Regressione
-    lineare> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-6><vspace|0.5fn>
+    <with|par-left|2tab|1.3.2<space|2spc>Normalizzazione
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-6>>
 
-    <with|par-left|1tab|2.1<space|2spc>Loss function e cost function
+    <with|par-left|2tab|1.3.3<space|2spc>Costi computazionali
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-7>>
 
-    <with|par-left|1tab|2.2<space|2spc>Risoluzione del problema di minimo
-    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-8>>
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|2<space|2spc>Regressione
+    lineare> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-8><vspace|0.5fn>
 
-    <with|par-left|2tab|2.2.1<space|2spc>Soluzione diretta: Algerba lineare
+    <with|par-left|1tab|2.1<space|2spc>Loss function e cost function
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-9>>
 
-    <with|par-left|2tab|2.2.2<space|2spc>Soluzione diretta: Calcoli
+    <with|par-left|1tab|2.2<space|2spc>Risoluzione del problema di minimo
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-10>>
 
+    <with|par-left|2tab|2.2.1<space|2spc>Soluzione diretta: Algerba lineare
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-11>>
+
+    <with|par-left|2tab|2.2.2<space|2spc>Soluzione diretta: Calcoli
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-12>>
+
     <with|par-left|2tab|2.2.3<space|2spc>Soluzione iterativa: Gradient
     descent (GD) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-11>>
+    <no-break><pageref|auto-13>>
 
     <with|par-left|2tab|2.2.4<space|2spc>Soluzione iterativa: Stochastic
     gradient descent (SGD) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-12>>
+    <no-break><pageref|auto-14>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|3<space|2spc>Regressione
     logistica> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-13><vspace|0.5fn>
+    <no-break><pageref|auto-15><vspace|0.5fn>
 
     <with|par-left|1tab|3.1<space|2spc>Introduzione
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-14>>
+    <no-break><pageref|auto-16>>
 
     <with|par-left|1tab|3.2<space|2spc>Definizione di regressione logistica
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-15>>
+    <no-break><pageref|auto-17>>
 
     <with|par-left|1tab|3.3<space|2spc>Funzione di costo
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-16>>
+    <no-break><pageref|auto-18>>
 
     <with|par-left|2tab|3.3.1<space|2spc>Maximum likelihood estimation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-17>>
+    <no-break><pageref|auto-19>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|4<space|2spc>Multiclass
     classification e softmax regression> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-18><vspace|0.5fn>
+    <no-break><pageref|auto-20><vspace|0.5fn>
 
     <with|par-left|1tab|4.1<space|2spc>Multiclass linear classification
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-19>>
+    <no-break><pageref|auto-21>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|5<space|2spc>Decision
     tree> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-20><vspace|0.5fn>
+    <no-break><pageref|auto-22><vspace|0.5fn>
 
     <with|par-left|1tab|5.1<space|2spc>Definizione
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-21>>
+    <no-break><pageref|auto-23>>
 
     <with|par-left|1tab|5.2<space|2spc>Decision boundary
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-22>>
+    <no-break><pageref|auto-24>>
 
     <with|par-left|1tab|5.3<space|2spc>Algoritmo ID3
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-23>>
+    <no-break><pageref|auto-25>>
 
     <with|par-left|2tab|5.3.1<space|2spc>Entropia - Definizione
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-24>>
+    <no-break><pageref|auto-26>>
 
     <with|par-left|2tab|5.3.2<space|2spc>L'entropia di una distribuzione
     congiunta e di una distribuzione maraginale
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-25>>
+    <no-break><pageref|auto-27>>
+
+    <with|par-left|2tab|5.3.3<space|2spc>ID3 - l'algoritmo completo
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-28>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|6<space|2spc>Feature
     mapping> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-26><vspace|0.5fn>
+    <no-break><pageref|auto-29><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|7<space|2spc>Decomposizione
     bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-27><vspace|0.5fn>
+    <no-break><pageref|auto-30><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|8<space|2spc>Regolariazzione:
     Migliorare la generalizzazione dei modelli>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-28><vspace|0.5fn>
+    <no-break><pageref|auto-31><vspace|0.5fn>
 
     <with|par-left|1tab|8.1<space|2spc>Regolarizzazione: Approccio classico
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-29>>
+    <no-break><pageref|auto-32>>
 
     <with|par-left|1tab|8.2<space|2spc>Regolarizzazione: Altri approcci
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-30>>
+    <no-break><pageref|auto-33>>
 
     <with|par-left|2tab|8.2.1<space|2spc>Dataset augmentation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-31>>
+    <no-break><pageref|auto-34>>
 
     <with|par-left|2tab|8.2.2<space|2spc>Noise injection
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-32>>
+    <no-break><pageref|auto-35>>
 
     <with|par-left|2tab|8.2.3<space|2spc>Early stopping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-33>>
+    <no-break><pageref|auto-36>>
 
     <with|par-left|2tab|8.2.4<space|2spc>Bagging
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-34>>
+    <no-break><pageref|auto-37>>
 
     <with|par-left|2tab|8.2.5<space|2spc>Boosting
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-35>>
+    <no-break><pageref|auto-38>>
 
     <with|par-left|2tab|8.2.6<space|2spc>Dropout
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-36>>
+    <no-break><pageref|auto-39>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Metriche
     di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-37><vspace|0.5fn>
+    <no-break><pageref|auto-40><vspace|0.5fn>
 
     <with|par-left|1tab|9.1<space|2spc>Confusion matrix
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-38>>
+    <no-break><pageref|auto-41>>
 
     <with|par-left|1tab|9.2<space|2spc>Falsi positivi e falsi negativi
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-39>>
+    <no-break><pageref|auto-42>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Clustering
     - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-40><vspace|0.5fn>
+    <no-break><pageref|auto-43><vspace|0.5fn>
 
     <with|par-left|1tab|10.1<space|2spc>Determinare il valore ottimo di K
     -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-41>>
+    <no-break><pageref|auto-44>>
   </table-of-contents>
 
-  \;
-
-  \;
-
-  \;
-
-  \;
+  <new-page>
 
   <section|Nearest neighbor methods>
 
@@ -249,6 +255,8 @@
     </eqnarray*>
   </named-algorithm>
 
+  <subsection|Cross validation>
+
   Ci si può domandare come viene scelto <math|k>. Esso prende il nome di
   hyper-parametro ed esso va scelto utilizzando un
   <with|font-series|bold|validation set>. Alla fine va anche utilizzato un
@@ -261,6 +269,30 @@
   l'errore del training set e l'errore sul test set siano circa uguali. Se
   questo accade signifca che l'algoritmo generalizza bene sui dati che non ha
   mai visto.
+
+  <subsection|K-fold cross validation>
+
+  E' una tecnica più robusta per la ricerca degli hyperparametri. Questa
+  tecnica prevede che i parametri vengono suddivisi in
+  <with|font-series|bold|training set> e <with|font-series|bold|test set>,
+  quindi non viene creato un validation set. Il training set viene
+  ulteriormente suddiviso in <math|k> sottoinsiemi
+  (<with|font-series|bold|folds>). Questi sottoinsiemi vengono suddivisi come
+  seguono:
+
+  <\algorithm>
+    Per ciascun hyperparametro
+
+    <space|1em>Per ciascuno split
+
+    <space|2em>Allenare il modello usando <math|k-1> dei fold come training
+
+    <space|2em>Utilizza il fold lasciato da parte coem validation set
+
+    <space|1em>Utilizza i dati del test set
+  </algorithm>
+
+  \ 
 
   <subsection|Insidie dell'algoritmo NN/KNN>
 
@@ -1108,6 +1140,60 @@
     </itemize>
   </example>
 
+  <section|Perceptron>
+
+  In questo modello gli <with|font-series|bold|input> e gli
+  <with|font-series|bold|output> sono dei <with|font-series|bold|numeri
+  reali> e ad ogni input viene associato un <with|font-series|bold|peso>.
+  All'output viene applicata una <with|font-series|bold|funzione di
+  attivazione> <math|\<phi\>>. Per cui abbiamo che:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|y>|<cell|=>|<cell|\<phi\><around*|(|<big|sum><rsub|j=1><rsup|d>w<rsub|j>x<rsub|j>|)>>>|<row|<cell|>|<cell|=>|<cell|\<phi\><around*|(|w<rsup|T>*x|)>>>>>
+  </eqnarray*>
+
+  Ad esempio, prendendo come funzione di attivazione la funzione segno:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|y>|<cell|=>|<cell|sgn<around*|(|w<rsup|T>*x|)>>>>>
+  </eqnarray*>
+
+  Spesso c'è anche il termine di <with|font-series|bold|bias> per cui
+  l'output del perceptron diventa:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|y>|<cell|=>|<cell|\<phi\><around*|(|w<rsup|T>*x+b|)>>>>>
+  </eqnarray*>
+
+  <\example>
+    Possiamo vedere perceptron come un classificatore binario, basta mappare
+    i valori di output <math|<around*|{|-1,1|}>> con le etichette delle
+    classi.
+  </example>
+
+  <subsection|Perceptron: Training>
+
+  Originariamente si utilizzava un algoritmo euristico per l'allenamento del
+  perceptron:
+
+  <\algorithm>
+    <math|w\<leftarrow\>0>
+
+    <with|font-series|bold|iterate> per un certo numero di
+    <with|font-series|bold|epoche>:
+
+    <space|1em><with|font-series|bold|choose>
+    <math|x<rsup|<around*|(|i|)>>\<in\>D>
+
+    <space|2em><math|y<rsup|<around*|(|i|)>>\<leftarrow\>\<phi\><around*|(|w<rsub|j>x<rsub|j><rsup|<around*|(|i|)>>+b|)>>
+
+    <space|1em><with|font-series|bold|<space|1em>if>
+    <math|t<rsup|<around*|(|i|)>>\<neq\>y<rsup|<around*|(|i|)>>>
+    <with|font-series|bold|then>
+
+    <space|3em><math|w<rsub|j>\<leftarrow\>w<rsub|j>+<around*|(|t<rsup|<around*|(|i|)>>-y<rsup|<around*|(|i|)>>|)>x<rsub|j><rsup|<around*|(|i|)>>>
+  </algorithm>
+
   <section|Decomposizione bias-varianza>
 
   Assumiamo che: <math|t=g<around*|(|x|)>+\<epsilon\>>, dove
@@ -1252,31 +1338,33 @@
 
     \;
 
-    \<theta\> = \<theta\><rsub|0>; \<theta\><rsup|*> = \<theta\>
+    <\with|font-series|bold>
+      \<theta\> = \<theta\><rsub|0>; \<theta\><rsup|*> = \<theta\>
 
-    i = i<rsup|*> = j = 0; v = \<infty\>
+      i = i<rsup|*> = j = 0; v = \<infty\>
 
-    while j \<less\> P do
+      while j \<less\> P do
 
-    <space|1em>Aggiorna \<theta\> eseguendo l'algoritmo di training n volte
+      <space|1em>Aggiorna \<theta\> eseguendo l'algoritmo di training n volte
 
-    <space|1em>i = i+n; j = j+1\ 
+      <space|1em>i = i+n; j = j+1\ 
 
-    <space|1em>v' = validationError(\<theta\>)
+      <space|1em>v' = validationError(\<theta\>)
 
-    <space|1em>if v' \<less\> v then\ 
+      <space|1em>if v' \<less\> v then\ 
 
-    <space|2em>j = 0
+      <space|2em>j = 0
 
-    <space|2em>\<theta\><rsup|*> = \<theta\>
+      <space|2em>\<theta\><rsup|*> = \<theta\>
 
-    <space|2em>i<rsup|*> = i
+      <space|2em>i<rsup|*> = i
 
-    <space|2em>v = v'
+      <space|2em>v = v'
 
-    <space|1em>end
+      <space|1em>end
 
-    end
+      end
+    </with>
   <|named-algorithm>
     \;
   </named-algorithm>
@@ -1714,51 +1802,55 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|2>>
-    <associate|auto-10|<tuple|2.2.2|5>>
-    <associate|auto-11|<tuple|2.2.3|5>>
-    <associate|auto-12|<tuple|2.2.4|6>>
-    <associate|auto-13|<tuple|3|7>>
-    <associate|auto-14|<tuple|3.1|7>>
-    <associate|auto-15|<tuple|3.2|7>>
-    <associate|auto-16|<tuple|3.3|7>>
-    <associate|auto-17|<tuple|3.3.1|8>>
-    <associate|auto-18|<tuple|4|9>>
-    <associate|auto-19|<tuple|4.1|9>>
-    <associate|auto-2|<tuple|1.1|3>>
-    <associate|auto-20|<tuple|5|10>>
-    <associate|auto-21|<tuple|5.1|10>>
-    <associate|auto-22|<tuple|5.2|11>>
-    <associate|auto-23|<tuple|5.3|11>>
-    <associate|auto-24|<tuple|5.3.1|11>>
-    <associate|auto-25|<tuple|5.3.2|13>>
-    <associate|auto-26|<tuple|5.3.3|14>>
-    <associate|auto-27|<tuple|6|15>>
-    <associate|auto-28|<tuple|7|15>>
-    <associate|auto-29|<tuple|8|15>>
-    <associate|auto-3|<tuple|1.1.1|3>>
-    <associate|auto-30|<tuple|8.1|16>>
-    <associate|auto-31|<tuple|8.2|16>>
-    <associate|auto-32|<tuple|8.2.1|16>>
-    <associate|auto-33|<tuple|8.2.2|16>>
-    <associate|auto-34|<tuple|8.2.3|17>>
-    <associate|auto-35|<tuple|8.2.4|19>>
-    <associate|auto-36|<tuple|8.2.5|20>>
-    <associate|auto-37|<tuple|8.2.6|20>>
-    <associate|auto-38|<tuple|9|21>>
-    <associate|auto-39|<tuple|9.1|21>>
-    <associate|auto-4|<tuple|1.1.2|3>>
-    <associate|auto-40|<tuple|9.2|22>>
-    <associate|auto-41|<tuple|10|23>>
-    <associate|auto-42|<tuple|10.1|?>>
-    <associate|auto-5|<tuple|1.1.3|3>>
-    <associate|auto-6|<tuple|2|3>>
-    <associate|auto-7|<tuple|2.1|4>>
-    <associate|auto-8|<tuple|2.2|5>>
-    <associate|auto-9|<tuple|2.2.1|5>>
+    <associate|auto-10|<tuple|2.2|5>>
+    <associate|auto-11|<tuple|2.2.1|5>>
+    <associate|auto-12|<tuple|2.2.2|6>>
+    <associate|auto-13|<tuple|2.2.3|6>>
+    <associate|auto-14|<tuple|2.2.4|6>>
+    <associate|auto-15|<tuple|3|7>>
+    <associate|auto-16|<tuple|3.1|7>>
+    <associate|auto-17|<tuple|3.2|7>>
+    <associate|auto-18|<tuple|3.3|8>>
+    <associate|auto-19|<tuple|3.3.1|8>>
+    <associate|auto-2|<tuple|1.1|2>>
+    <associate|auto-20|<tuple|4|9>>
+    <associate|auto-21|<tuple|4.1|9>>
+    <associate|auto-22|<tuple|5|10>>
+    <associate|auto-23|<tuple|5.1|10>>
+    <associate|auto-24|<tuple|5.2|11>>
+    <associate|auto-25|<tuple|5.3|11>>
+    <associate|auto-26|<tuple|5.3.1|12>>
+    <associate|auto-27|<tuple|5.3.2|14>>
+    <associate|auto-28|<tuple|5.3.3|15>>
+    <associate|auto-29|<tuple|6|16>>
+    <associate|auto-3|<tuple|1.2|3>>
+    <associate|auto-30|<tuple|7|16>>
+    <associate|auto-31|<tuple|7.1|16>>
+    <associate|auto-32|<tuple|8|16>>
+    <associate|auto-33|<tuple|9|17>>
+    <associate|auto-34|<tuple|9.1|17>>
+    <associate|auto-35|<tuple|9.2|17>>
+    <associate|auto-36|<tuple|9.2.1|18>>
+    <associate|auto-37|<tuple|9.2.2|19>>
+    <associate|auto-38|<tuple|9.2.3|20>>
+    <associate|auto-39|<tuple|9.2.4|21>>
+    <associate|auto-4|<tuple|1.3|3>>
+    <associate|auto-40|<tuple|9.2.5|21>>
+    <associate|auto-41|<tuple|9.2.6|22>>
+    <associate|auto-42|<tuple|10|22>>
+    <associate|auto-43|<tuple|10.1|23>>
+    <associate|auto-44|<tuple|10.2|24>>
+    <associate|auto-45|<tuple|11|?>>
+    <associate|auto-46|<tuple|11.1|?>>
+    <associate|auto-5|<tuple|1.3.1|3>>
+    <associate|auto-6|<tuple|1.3.2|3>>
+    <associate|auto-7|<tuple|1.3.3|3>>
+    <associate|auto-8|<tuple|2|4>>
+    <associate|auto-9|<tuple|2.1|4>>
     <associate|footnote-1|<tuple|1|2>>
-    <associate|footnote-2|<tuple|2|6>>
+    <associate|footnote-2|<tuple|2|7>>
     <associate|footnr-1|<tuple|1|2>>
-    <associate|footnr-2|<tuple|2|6>>
+    <associate|footnr-2|<tuple|2|7>>
   </collection>
 </references>
 
@@ -1769,168 +1861,180 @@
       neighbor methods> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <with|par-left|<quote|1tab>|1.1<space|2spc>Insidie dell'algoritmo
-      NN/KNN <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|1.1<space|2spc>Cross validation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2>>
 
-      <with|par-left|<quote|2tab>|1.1.1<space|2spc>Curse of dimensionality
+      <with|par-left|<quote|1tab>|1.2<space|2spc>K-fold cross validation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
 
-      <with|par-left|<quote|2tab>|1.1.2<space|2spc>Normalizzazione
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|1.3<space|2spc>Insidie dell'algoritmo
+      NN/KNN <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4>>
 
-      <with|par-left|<quote|2tab>|1.1.3<space|2spc>Costi computazionali
+      <with|par-left|<quote|2tab>|1.3.1<space|2spc>Curse of dimensionality
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
 
+      <with|par-left|<quote|2tab>|1.3.2<space|2spc>Normalizzazione
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <with|par-left|<quote|2tab>|1.3.3<space|2spc>Costi computazionali
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Regressione
       lineare> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
+      <no-break><pageref|auto-8><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|2.1<space|2spc>Loss function e cost
       function <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-7>>
+      <no-break><pageref|auto-9>>
 
       <with|par-left|<quote|1tab>|2.2<space|2spc>Risoluzione del problema di
       minimo <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-8>>
+      <no-break><pageref|auto-10>>
 
       <with|par-left|<quote|2tab>|2.2.1<space|2spc>Soluzione diretta: Algerba
       lineare <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-9>>
+      <no-break><pageref|auto-11>>
 
       <with|par-left|<quote|2tab>|2.2.2<space|2spc>Soluzione diretta: Calcoli
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10>>
+      <no-break><pageref|auto-12>>
 
       <with|par-left|<quote|2tab>|2.2.3<space|2spc>Soluzione iterativa:
       Gradient descent (GD) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11>>
+      <no-break><pageref|auto-13>>
 
       <with|par-left|<quote|2tab>|2.2.4<space|2spc>Soluzione iterativa:
       Stochastic gradient descent (SGD) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-12>>
+      <no-break><pageref|auto-14>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Regressione
       logistica> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-13><vspace|0.5fn>
+      <no-break><pageref|auto-15><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|3.1<space|2spc>Introduzione
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-14>>
+      <no-break><pageref|auto-16>>
 
       <with|par-left|<quote|1tab>|3.2<space|2spc>Definizione di regressione
       logistica <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15>>
+      <no-break><pageref|auto-17>>
 
       <with|par-left|<quote|1tab>|3.3<space|2spc>Funzione di costo
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-16>>
+      <no-break><pageref|auto-18>>
 
       <with|par-left|<quote|2tab>|3.3.1<space|2spc>Maximum likelihood
       estimation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-17>>
+      <no-break><pageref|auto-19>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>Multiclass
       classification e softmax regression>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-18><vspace|0.5fn>
+      <no-break><pageref|auto-20><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|4.1<space|2spc>Multiclass linear
       classification <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-19>>
+      <no-break><pageref|auto-21>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Decision
       tree> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-20><vspace|0.5fn>
+      <no-break><pageref|auto-22><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|5.1<space|2spc>Definizione
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-21>>
+      <no-break><pageref|auto-23>>
 
       <with|par-left|<quote|1tab>|5.2<space|2spc>Decision boundary
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-22>>
+      <no-break><pageref|auto-24>>
 
       <with|par-left|<quote|1tab>|5.3<space|2spc>Algoritmo ID3
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-23>>
+      <no-break><pageref|auto-25>>
 
       <with|par-left|<quote|2tab>|5.3.1<space|2spc>Entropia - Definizione
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-24>>
+      <no-break><pageref|auto-26>>
 
       <with|par-left|<quote|2tab>|5.3.2<space|2spc>L'entropia di una
       distribuzione congiunta e di una distribuzione maraginale
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-25>>
+      <no-break><pageref|auto-27>>
+
+      <with|par-left|<quote|2tab>|5.3.3<space|2spc>ID3 - l'algoritmo completo
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-28>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Feature
       mapping> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-26><vspace|0.5fn>
+      <no-break><pageref|auto-29><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Decomposizione
       bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-27><vspace|0.5fn>
+      <no-break><pageref|auto-30><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Regolariazzione:
       Migliorare la generalizzazione dei modelli>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-28><vspace|0.5fn>
+      <no-break><pageref|auto-31><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|8.1<space|2spc>Regolarizzazione: Approccio
       classico <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-29>>
+      <no-break><pageref|auto-32>>
 
       <with|par-left|<quote|1tab>|8.2<space|2spc>Regolarizzazione: Altri
       approcci <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-30>>
+      <no-break><pageref|auto-33>>
 
       <with|par-left|<quote|2tab>|8.2.1<space|2spc>Dataset augmentation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-31>>
+      <no-break><pageref|auto-34>>
 
       <with|par-left|<quote|2tab>|8.2.2<space|2spc>Noise injection
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-32>>
+      <no-break><pageref|auto-35>>
 
       <with|par-left|<quote|2tab>|8.2.3<space|2spc>Early stopping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-33>>
+      <no-break><pageref|auto-36>>
 
       <with|par-left|<quote|2tab>|8.2.4<space|2spc>Bagging
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-34>>
+      <no-break><pageref|auto-37>>
 
       <with|par-left|<quote|2tab>|8.2.5<space|2spc>Boosting
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-35>>
+      <no-break><pageref|auto-38>>
 
       <with|par-left|<quote|2tab>|8.2.6<space|2spc>Dropout
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-36>>
+      <no-break><pageref|auto-39>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Metriche
       di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-37><vspace|0.5fn>
+      <no-break><pageref|auto-40><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|9.1<space|2spc>Confusion matrix
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-38>>
+      <no-break><pageref|auto-41>>
 
       <with|par-left|<quote|1tab>|9.2<space|2spc>Falsi positivi e falsi
       negativi <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-39>>
+      <no-break><pageref|auto-42>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Clustering
       - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-40><vspace|0.5fn>
+      <no-break><pageref|auto-43><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|10.1<space|2spc>Determinare il valore
       ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-41>>
+      <no-break><pageref|auto-44>>
     </associate>
   </collection>
 </auxiliary>
