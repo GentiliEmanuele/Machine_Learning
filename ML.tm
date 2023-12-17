@@ -169,66 +169,74 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-41>>
 
+    <with|par-left|1tab|8.5<space|2spc>Training di reti neurali
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-42>>
+
+    <with|par-left|2tab|8.5.1<space|2spc>Training di reti neurali tramite
+    l'algoritmo SDG <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-43>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Decomposizione
     bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-42><vspace|0.5fn>
+    <no-break><pageref|auto-44><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Regolariazzione:
     Migliorare la generalizzazione dei modelli>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-43><vspace|0.5fn>
+    <no-break><pageref|auto-45><vspace|0.5fn>
 
     <with|par-left|1tab|10.1<space|2spc>Regolarizzazione: Approccio classico
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44>>
+    <no-break><pageref|auto-46>>
 
     <with|par-left|1tab|10.2<space|2spc>Regolarizzazione: Altri approcci
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45>>
+    <no-break><pageref|auto-47>>
 
     <with|par-left|2tab|10.2.1<space|2spc>Dataset augmentation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>
+    <no-break><pageref|auto-48>>
 
     <with|par-left|2tab|10.2.2<space|2spc>Noise injection
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47>>
+    <no-break><pageref|auto-49>>
 
     <with|par-left|2tab|10.2.3<space|2spc>Early stopping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-48>>
+    <no-break><pageref|auto-50>>
 
     <with|par-left|2tab|10.2.4<space|2spc>Bagging
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-49>>
+    <no-break><pageref|auto-51>>
 
     <with|par-left|2tab|10.2.5<space|2spc>Boosting
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-50>>
+    <no-break><pageref|auto-52>>
 
     <with|par-left|2tab|10.2.6<space|2spc>Dropout
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-51>>
+    <no-break><pageref|auto-53>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Metriche
     di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-52><vspace|0.5fn>
+    <no-break><pageref|auto-54><vspace|0.5fn>
 
     <with|par-left|1tab|11.1<space|2spc>Confusion matrix
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-53>>
+    <no-break><pageref|auto-55>>
 
     <with|par-left|1tab|11.2<space|2spc>Falsi positivi e falsi negativi
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-54>>
+    <no-break><pageref|auto-56>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>Clustering
     - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-55><vspace|0.5fn>
+    <no-break><pageref|auto-57><vspace|0.5fn>
 
     <with|par-left|1tab|12.1<space|2spc>Determinare il valore ottimo di K
     -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-56>>
+    <no-break><pageref|auto-58>>
   </table-of-contents>
 
   <new-page>
@@ -1508,7 +1516,50 @@
     learning.\ 
   </definition>
 
-  \;
+  <subsection|Training di reti neurali>
+
+  Analogamente a quanto fatto per gli altri modelli parametrici, il training
+  di una rete neurale ha l'obiettivo di trovare il vettore dei parametri
+  <math|<with|font-series|bold|\<theta\>>> che minimizza la funzione di costo
+  <math|J<around*|(|<with|font-series|bold|\<theta\>>|)>>. Nel nostro caso
+  <with|font-series|bold|<math|\<theta\>>> include la matrice dei pesi e il
+  vettore di bias. Ci si può domandare: quale funzione di costo vogliamo
+  ottimizzare?
+
+  Pensiamo ad esempio ad un problema di regressione e scegliamo come loss
+  function l'errore quadratico medio, ovvero:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|\<frak-L\>>|<cell|=>|<cell|<frac|1|2><around*|(|t-y|)><rsup|2>>>>>
+  </eqnarray*>
+
+  Dove <math|t> è il valore target da predire, mentre <math|y> è la
+  predizione della rete neurale. Allora la funzione di costo, considerando
+  anche un termine di regolarizzazione è la seguente:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|J<around*|(|<with|font-series|bold|\<theta\>>|)>>|<cell|=>|<cell|<big|sum><rsub|i=1><rsup|N><frac|1|2>*<around*|(|t<rsup|<around*|(|i|)>>-y<rsup|<around*|(|i|)>>|)><rsup|2>+\<lambda\>*\<Omega\><around*|(|<with|font-series|bold|\<theta\>>|)>>>>>
+  </eqnarray*>
+
+  <subsubsection|Training di reti neurali tramite l'algoritmo SDG>
+
+  <\named-algorithm|>
+    <with|font-series|bold|for> epoch <math|\<leftarrow\>>
+    <math|1,\<ldots\>,N<rsub|epochs>> <with|font-series|bold|do>
+
+    <space|1em>/* Loop su tutti i campioni di training */
+
+    <space|1em><with|font-series|bold|for> <math|i=1,\<ldots\>,N>
+    <with|font-series|bold|do>
+
+    <space|2em><wide|g|\<bar\>><math|\<leftarrow\>\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<rsup|<around*|(|i|)>><around*|(|<with|font-series|bold|\<theta\>>|)>>
+
+    <space|2em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>-\<alpha\><wide|g|\<bar\>>>
+
+    <space|1em><with|font-series|bold|end>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
 
   <section|Decomposizione bias-varianza>
 
@@ -2141,34 +2192,36 @@
     <associate|auto-29|<tuple|6|16>>
     <associate|auto-3|<tuple|1.2|3>>
     <associate|auto-30|<tuple|7|16>>
-    <associate|auto-31|<tuple|7.1|17>>
+    <associate|auto-31|<tuple|7.1|16>>
     <associate|auto-32|<tuple|7.2|17>>
-    <associate|auto-33|<tuple|8|18>>
+    <associate|auto-33|<tuple|8|17>>
     <associate|auto-34|<tuple|8.1|19>>
     <associate|auto-35|<tuple|8.1.1|19>>
     <associate|auto-36|<tuple|8.1.2|19>>
-    <associate|auto-37|<tuple|8.1.3|20>>
-    <associate|auto-38|<tuple|8.1.4|20>>
+    <associate|auto-37|<tuple|8.1.3|19>>
+    <associate|auto-38|<tuple|8.1.4|19>>
     <associate|auto-39|<tuple|8.2|20>>
     <associate|auto-4|<tuple|1.3|4>>
     <associate|auto-40|<tuple|8.3|20>>
     <associate|auto-41|<tuple|8.4|21>>
-    <associate|auto-42|<tuple|9|22>>
-    <associate|auto-43|<tuple|10|22>>
-    <associate|auto-44|<tuple|10.1|22>>
-    <associate|auto-45|<tuple|10.2|23>>
-    <associate|auto-46|<tuple|10.2.1|23>>
-    <associate|auto-47|<tuple|10.2.2|23>>
-    <associate|auto-48|<tuple|10.2.3|23>>
-    <associate|auto-49|<tuple|10.2.4|24>>
+    <associate|auto-42|<tuple|8.5|21>>
+    <associate|auto-43|<tuple|8.5.1|21>>
+    <associate|auto-44|<tuple|9|22>>
+    <associate|auto-45|<tuple|10|22>>
+    <associate|auto-46|<tuple|10.1|22>>
+    <associate|auto-47|<tuple|10.2|23>>
+    <associate|auto-48|<tuple|10.2.1|23>>
+    <associate|auto-49|<tuple|10.2.2|23>>
     <associate|auto-5|<tuple|1.3.1|4>>
-    <associate|auto-50|<tuple|10.2.5|26>>
-    <associate|auto-51|<tuple|10.2.6|27>>
-    <associate|auto-52|<tuple|11|27>>
-    <associate|auto-53|<tuple|11.1|27>>
-    <associate|auto-54|<tuple|11.2|28>>
-    <associate|auto-55|<tuple|12|29>>
-    <associate|auto-56|<tuple|12.1|30>>
+    <associate|auto-50|<tuple|10.2.3|23>>
+    <associate|auto-51|<tuple|10.2.4|24>>
+    <associate|auto-52|<tuple|10.2.5|26>>
+    <associate|auto-53|<tuple|10.2.6|27>>
+    <associate|auto-54|<tuple|11|27>>
+    <associate|auto-55|<tuple|11.1|27>>
+    <associate|auto-56|<tuple|11.2|28>>
+    <associate|auto-57|<tuple|12|29>>
+    <associate|auto-58|<tuple|12.1|30>>
     <associate|auto-6|<tuple|1.3.2|4>>
     <associate|auto-7|<tuple|1.3.3|4>>
     <associate|auto-8|<tuple|2|4>>
@@ -2353,66 +2406,74 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-41>>
 
+      <with|par-left|<quote|1tab>|8.5<space|2spc>Training di reti neurali
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-42>>
+
+      <with|par-left|<quote|2tab>|8.5.1<space|2spc>Training di reti neurali
+      tramite l'algoritmo SDG <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-43>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Decomposizione
       bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-42><vspace|0.5fn>
+      <no-break><pageref|auto-44><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Regolariazzione:
       Migliorare la generalizzazione dei modelli>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-43><vspace|0.5fn>
+      <no-break><pageref|auto-45><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|10.1<space|2spc>Regolarizzazione: Approccio
       classico <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44>>
+      <no-break><pageref|auto-46>>
 
       <with|par-left|<quote|1tab>|10.2<space|2spc>Regolarizzazione: Altri
       approcci <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45>>
+      <no-break><pageref|auto-47>>
 
       <with|par-left|<quote|2tab>|10.2.1<space|2spc>Dataset augmentation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>
+      <no-break><pageref|auto-48>>
 
       <with|par-left|<quote|2tab>|10.2.2<space|2spc>Noise injection
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>
+      <no-break><pageref|auto-49>>
 
       <with|par-left|<quote|2tab>|10.2.3<space|2spc>Early stopping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-50>>
 
       <with|par-left|<quote|2tab>|10.2.4<space|2spc>Bagging
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49>>
+      <no-break><pageref|auto-51>>
 
       <with|par-left|<quote|2tab>|10.2.5<space|2spc>Boosting
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>
+      <no-break><pageref|auto-52>>
 
       <with|par-left|<quote|2tab>|10.2.6<space|2spc>Dropout
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51>>
+      <no-break><pageref|auto-53>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Metriche
       di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-52><vspace|0.5fn>
+      <no-break><pageref|auto-54><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|11.1<space|2spc>Confusion matrix
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-55>>
 
       <with|par-left|<quote|1tab>|11.2<space|2spc>Falsi positivi e falsi
       negativi <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54>>
+      <no-break><pageref|auto-56>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>Clustering
       - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55><vspace|0.5fn>
+      <no-break><pageref|auto-57><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|12.1<space|2spc>Determinare il valore
       ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-56>>
+      <no-break><pageref|auto-58>>
     </associate>
   </collection>
 </auxiliary>
