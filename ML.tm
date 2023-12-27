@@ -177,66 +177,82 @@
     l'algoritmo SDG <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-43>>
 
+    <with|par-left|2tab|8.5.2<space|2spc>Backpropagation
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-44>>
+
+    <with|par-left|2tab|8.5.3<space|2spc>Forward propagation
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-45>>
+
+    <with|par-left|2tab|8.5.4<space|2spc>Backpropagation con variabili
+    scalari <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-46>>
+
+    <with|par-left|2tab|8.5.5<space|2spc>Backpropagation per le reti neurali
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-47>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|9<space|2spc>Decomposizione
     bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-44><vspace|0.5fn>
+    <no-break><pageref|auto-48><vspace|0.5fn>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|10<space|2spc>Regolariazzione:
     Migliorare la generalizzazione dei modelli>
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-45><vspace|0.5fn>
+    <no-break><pageref|auto-49><vspace|0.5fn>
 
     <with|par-left|1tab|10.1<space|2spc>Regolarizzazione: Approccio classico
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-46>>
+    <no-break><pageref|auto-50>>
 
     <with|par-left|1tab|10.2<space|2spc>Regolarizzazione: Altri approcci
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-47>>
+    <no-break><pageref|auto-51>>
 
     <with|par-left|2tab|10.2.1<space|2spc>Dataset augmentation
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-48>>
+    <no-break><pageref|auto-52>>
 
     <with|par-left|2tab|10.2.2<space|2spc>Noise injection
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-49>>
+    <no-break><pageref|auto-53>>
 
     <with|par-left|2tab|10.2.3<space|2spc>Early stopping
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-50>>
+    <no-break><pageref|auto-54>>
 
     <with|par-left|2tab|10.2.4<space|2spc>Bagging
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-51>>
+    <no-break><pageref|auto-55>>
 
     <with|par-left|2tab|10.2.5<space|2spc>Boosting
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-52>>
+    <no-break><pageref|auto-56>>
 
     <with|par-left|2tab|10.2.6<space|2spc>Dropout
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-53>>
+    <no-break><pageref|auto-57>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|11<space|2spc>Metriche
     di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-54><vspace|0.5fn>
+    <no-break><pageref|auto-58><vspace|0.5fn>
 
     <with|par-left|1tab|11.1<space|2spc>Confusion matrix
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-55>>
+    <no-break><pageref|auto-59>>
 
     <with|par-left|1tab|11.2<space|2spc>Falsi positivi e falsi negativi
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-56>>
+    <no-break><pageref|auto-60>>
 
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>Clustering
     - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-57><vspace|0.5fn>
+    <no-break><pageref|auto-61><vspace|0.5fn>
 
     <with|par-left|1tab|12.1<space|2spc>Determinare il valore ottimo di K
     -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-58>>
+    <no-break><pageref|auto-62>>
   </table-of-contents>
 
   <new-page>
@@ -2351,75 +2367,75 @@
     <associate|auto-1|<tuple|1|3>>
     <associate|auto-10|<tuple|2.2|6>>
     <associate|auto-11|<tuple|2.2.1|6>>
-    <associate|auto-12|<tuple|2.2.2|6>>
-    <associate|auto-13|<tuple|2.2.3|6>>
+    <associate|auto-12|<tuple|2.2.2|7>>
+    <associate|auto-13|<tuple|2.2.3|7>>
     <associate|auto-14|<tuple|2.2.4|7>>
     <associate|auto-15|<tuple|3|8>>
     <associate|auto-16|<tuple|3.1|8>>
     <associate|auto-17|<tuple|3.2|8>>
-    <associate|auto-18|<tuple|3.3|8>>
+    <associate|auto-18|<tuple|3.3|9>>
     <associate|auto-19|<tuple|3.3.1|9>>
     <associate|auto-2|<tuple|1.1|3>>
-    <associate|auto-20|<tuple|4|9>>
+    <associate|auto-20|<tuple|4|10>>
     <associate|auto-21|<tuple|4.1|10>>
     <associate|auto-22|<tuple|5|11>>
     <associate|auto-23|<tuple|5.1|11>>
     <associate|auto-24|<tuple|5.2|12>>
     <associate|auto-25|<tuple|5.3|12>>
-    <associate|auto-26|<tuple|5.3.1|12>>
-    <associate|auto-27|<tuple|5.3.2|14>>
-    <associate|auto-28|<tuple|5.3.3|15>>
+    <associate|auto-26|<tuple|5.3.1|13>>
+    <associate|auto-27|<tuple|5.3.2|15>>
+    <associate|auto-28|<tuple|5.3.3|16>>
     <associate|auto-29|<tuple|6|16>>
-    <associate|auto-3|<tuple|1.2|3>>
-    <associate|auto-30|<tuple|7|16>>
-    <associate|auto-31|<tuple|7.1|16>>
-    <associate|auto-32|<tuple|7.2|17>>
-    <associate|auto-33|<tuple|8|17>>
-    <associate|auto-34|<tuple|8.1|19>>
-    <associate|auto-35|<tuple|8.1.1|19>>
-    <associate|auto-36|<tuple|8.1.2|19>>
-    <associate|auto-37|<tuple|8.1.3|19>>
-    <associate|auto-38|<tuple|8.1.4|19>>
-    <associate|auto-39|<tuple|8.2|20>>
+    <associate|auto-3|<tuple|1.2|4>>
+    <associate|auto-30|<tuple|7|17>>
+    <associate|auto-31|<tuple|7.1|17>>
+    <associate|auto-32|<tuple|7.2|18>>
+    <associate|auto-33|<tuple|8|18>>
+    <associate|auto-34|<tuple|8.1|20>>
+    <associate|auto-35|<tuple|8.1.1|20>>
+    <associate|auto-36|<tuple|8.1.2|20>>
+    <associate|auto-37|<tuple|8.1.3|20>>
+    <associate|auto-38|<tuple|8.1.4|20>>
+    <associate|auto-39|<tuple|8.2|21>>
     <associate|auto-4|<tuple|1.3|4>>
-    <associate|auto-40|<tuple|8.3|20>>
-    <associate|auto-41|<tuple|8.4|21>>
-    <associate|auto-42|<tuple|8.5|21>>
-    <associate|auto-43|<tuple|8.5.1|21>>
-    <associate|auto-44|<tuple|8.5.2|22>>
-    <associate|auto-45|<tuple|8.5.3|22>>
-    <associate|auto-46|<tuple|8.5.4|22>>
-    <associate|auto-47|<tuple|8.5.5|23>>
-    <associate|auto-48|<tuple|9|23>>
-    <associate|auto-49|<tuple|10|23>>
+    <associate|auto-40|<tuple|8.3|21>>
+    <associate|auto-41|<tuple|8.4|22>>
+    <associate|auto-42|<tuple|8.5|22>>
+    <associate|auto-43|<tuple|8.5.1|23>>
+    <associate|auto-44|<tuple|8.5.2|23>>
+    <associate|auto-45|<tuple|8.5.3|23>>
+    <associate|auto-46|<tuple|8.5.4|23>>
+    <associate|auto-47|<tuple|8.5.5|24>>
+    <associate|auto-48|<tuple|9|25>>
+    <associate|auto-49|<tuple|10|25>>
     <associate|auto-5|<tuple|1.3.1|4>>
-    <associate|auto-50|<tuple|10.1|23>>
-    <associate|auto-51|<tuple|10.2|24>>
+    <associate|auto-50|<tuple|10.1|25>>
+    <associate|auto-51|<tuple|10.2|26>>
     <associate|auto-52|<tuple|10.2.1|26>>
-    <associate|auto-53|<tuple|10.2.2|27>>
-    <associate|auto-54|<tuple|10.2.3|27>>
+    <associate|auto-53|<tuple|10.2.2|26>>
+    <associate|auto-54|<tuple|10.2.3|26>>
     <associate|auto-55|<tuple|10.2.4|27>>
-    <associate|auto-56|<tuple|10.2.5|28>>
-    <associate|auto-57|<tuple|10.2.6|29>>
+    <associate|auto-56|<tuple|10.2.5|29>>
+    <associate|auto-57|<tuple|10.2.6|30>>
     <associate|auto-58|<tuple|11|30>>
-    <associate|auto-59|<tuple|11.1|?>>
+    <associate|auto-59|<tuple|11.1|30>>
     <associate|auto-6|<tuple|1.3.2|4>>
-    <associate|auto-60|<tuple|11.2|?>>
-    <associate|auto-61|<tuple|12|?>>
-    <associate|auto-62|<tuple|12.1|?>>
+    <associate|auto-60|<tuple|11.2|31>>
+    <associate|auto-61|<tuple|12|32>>
+    <associate|auto-62|<tuple|12.1|33>>
     <associate|auto-7|<tuple|1.3.3|4>>
-    <associate|auto-8|<tuple|2|4>>
+    <associate|auto-8|<tuple|2|5>>
     <associate|auto-9|<tuple|2.1|5>>
     <associate|footnote-1|<tuple|1|3>>
-    <associate|footnote-2|<tuple|2|7>>
-    <associate|footnote-3|<tuple|3|21>>
-    <associate|footnote-4|<tuple|4|21>>
-    <associate|footnote-5|<tuple|5|?>>
+    <associate|footnote-2|<tuple|2|8>>
+    <associate|footnote-3|<tuple|3|22>>
+    <associate|footnote-4|<tuple|4|22>>
+    <associate|footnote-5|<tuple|5|24>>
     <associate|footnr-1|<tuple|1|3>>
-    <associate|footnr-2|<tuple|2|7>>
-    <associate|footnr-3|<tuple|3|21>>
-    <associate|footnr-4|<tuple|4|21>>
-    <associate|footnr-5|<tuple|5|?>>
+    <associate|footnr-2|<tuple|2|8>>
+    <associate|footnr-3|<tuple|3|22>>
+    <associate|footnr-4|<tuple|4|22>>
+    <associate|footnr-5|<tuple|5|24>>
   </collection>
 </references>
 
@@ -2600,66 +2616,82 @@
       tramite l'algoritmo SDG <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-43>>
 
+      <with|par-left|<quote|2tab>|8.5.2<space|2spc>Backpropagation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-44>>
+
+      <with|par-left|<quote|2tab>|8.5.3<space|2spc>Forward propagation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-45>>
+
+      <with|par-left|<quote|2tab>|8.5.4<space|2spc>Backpropagation con
+      variabili scalari <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-46>>
+
+      <with|par-left|<quote|2tab>|8.5.5<space|2spc>Backpropagation per le
+      reti neurali <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-47>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Decomposizione
       bias-varianza> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-44><vspace|0.5fn>
+      <no-break><pageref|auto-48><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Regolariazzione:
       Migliorare la generalizzazione dei modelli>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-45><vspace|0.5fn>
+      <no-break><pageref|auto-49><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|10.1<space|2spc>Regolarizzazione: Approccio
       classico <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-46>>
+      <no-break><pageref|auto-50>>
 
       <with|par-left|<quote|1tab>|10.2<space|2spc>Regolarizzazione: Altri
       approcci <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-47>>
+      <no-break><pageref|auto-51>>
 
       <with|par-left|<quote|2tab>|10.2.1<space|2spc>Dataset augmentation
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-48>>
+      <no-break><pageref|auto-52>>
 
       <with|par-left|<quote|2tab>|10.2.2<space|2spc>Noise injection
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-49>>
+      <no-break><pageref|auto-53>>
 
       <with|par-left|<quote|2tab>|10.2.3<space|2spc>Early stopping
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-50>>
+      <no-break><pageref|auto-54>>
 
       <with|par-left|<quote|2tab>|10.2.4<space|2spc>Bagging
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-51>>
+      <no-break><pageref|auto-55>>
 
       <with|par-left|<quote|2tab>|10.2.5<space|2spc>Boosting
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-52>>
+      <no-break><pageref|auto-56>>
 
       <with|par-left|<quote|2tab>|10.2.6<space|2spc>Dropout
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-53>>
+      <no-break><pageref|auto-57>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|11<space|2spc>Metriche
       di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-54><vspace|0.5fn>
+      <no-break><pageref|auto-58><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|11.1<space|2spc>Confusion matrix
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-55>>
+      <no-break><pageref|auto-59>>
 
       <with|par-left|<quote|1tab>|11.2<space|2spc>Falsi positivi e falsi
       negativi <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-56>>
+      <no-break><pageref|auto-60>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>Clustering
       - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-57><vspace|0.5fn>
+      <no-break><pageref|auto-61><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|12.1<space|2spc>Determinare il valore
       ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-58>>
+      <no-break><pageref|auto-62>>
     </associate>
   </collection>
 </auxiliary>
