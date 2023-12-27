@@ -1561,6 +1561,186 @@
     <with|font-series|bold|end>
   </named-algorithm>
 
+  L'utilizzo di questo algoritmo presenta delle problematiche:
+
+  <\itemize>
+    <item><with|font-series|bold|Non linearità>: causa funzioni di perdità
+    non convesse
+
+    <item><with|font-series|bold|Efficienza nel calcolo del gradiente>:\ 
+
+    <\itemize>
+      <item>Per una rete neurale con un singolo livello, la loss è una
+      funzione dei pesi. Per cui è semplice calcolare il gradiente.
+
+      <item>Per reti neurali multi-livello: dato che la loss a ciascun
+      livello è una funzione composta dei pesi dei precedenti livelli risulta
+      semplice derivare un'espressione analitica ma valutarla diventa
+      complesso.
+    </itemize>
+  </itemize>
+
+  <subsubsection|Backpropagation>
+
+  <with|font-series|bold|Backpropagation> è un algoritmo che serve per
+  calcolare il gradiente di una funzione. L'algoritmo è composto da due fasi:
+
+  <\itemize>
+    <item><with|font-series|bold|Forward>: un'istanza di training viene messa
+    in input alla rete neurale. L'output finale viene utilizzato per
+    calcolare la funzione di costo.\ 
+
+    <item><with|font-series|bold|Backward>: il gradiente della funzione di
+    costo rispetto ai parametri viene calcolato attraversando la rete neurale
+    nella direzione opposta.
+  </itemize>
+
+  Per calcolare il gradiente in maniera efficiente, backprop sfrutta la
+  programmazione dinamica e la chain rule.
+
+  <subsubsection|Forward propagation>
+
+  <\definition>
+    (Forward propagation): calcolo delle varabili intermedie e dell'output in
+    ordine, dal livello di input a quello di output.
+  </definition>
+
+  <subsubsection|Backpropagation con variabili scalari>
+
+  E' utile descrivere le reti neurali usando i <with|font-series|bold|grafi
+  computazionali>. In ciasucn grafo computazionale:
+
+  <\itemize>
+    <item>Ciascun nodo corrisponde ad una <with|font-series|bold|variabile>
+    (scalare, matrice, tensore)
+
+    <item>Un arco <math|<around*|(|x,y|)>> indica che <math|y> è calcolato da
+    <math|x> applicando un'<with|font-series|bold|operazione>
+  </itemize>
+
+  Un'operazione è una funzione di una o più variabili che assumiamo che
+  ritorni una singola variabile.
+
+  Consideriamo quindi un grafo computazionale con nodi
+  <math|u<rsup|<around*|(|1|)>>,\<ldots\>,u<rsup|<around*|(|n|)>>>. Ciascun
+  nodo rappresenta una variabile e i nodi sono ordinati secondo un ordine
+  topologico<\footnote>
+    Se <math|<around*|(|b,z|)>\<in\>E> allora <math|b> deve stare prima di
+    <math|z>
+  </footnote>.
+
+  Le prime <math|k\<less\>n> variabili rappresentano quelli di input e
+  <math|u<rsup|<around*|(|n|)>>> è la variabile di output.
+
+  Noi vogliamo calcolare il gradiente rispetto all'input:
+  <math|<frac|\<partial\>u<rsup|<around*|(|n|)>>|\<partial\>u<rsup|<around*|(|i|)>>>,\<forall\>i\<in\><around*|{|1,\<ldots\>k|}>>.\ 
+
+  NB: solitamente in fase di training siamo interessati al gradiente rispetto
+  ai parametri e non all'input.\ 
+
+  Ciascun nodo <math|u<rsup|<around*|(|i|)>>> è associato con un'operazione
+  <math|f<rsup|<around*|(|i|)>>>:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|u<rsup|<around*|(|i|)>>>|<cell|=>|<cell|f<rsup|<around*|(|i|)>><around*|(|A<rsup|<around*|(|i|)>>|)>>>|<row|<cell|A<rsup|<around*|(|i|)>>>|<cell|=>|<cell|<around*|{|u<rsup|<around*|(|j|)>><around*|\||j\<in\>|\<nobracket\>>Parent<around*|(|u<rsup|<around*|(|i|)>>|)>|}>>>>>
+  </eqnarray*>
+
+  <\named-algorithm|Forward pass (solo con variabili scalari)>
+    <with|font-series|bold|for> i=1,<text-dots>,k <with|font-series|bold|do>
+
+    <space|1em><math|u<rsup|<around*|(|i|)>>\<leftarrow\>x<rsub|i>><space|1em>/*Variabili
+    di input*/
+
+    <with|font-series|bold|end>
+
+    <with|font-series|bold|for> i=k+1,<text-dots>,n
+    <with|font-series|bold|do>
+
+    <space|1em><math|u<rsup|<around*|(|i|)>>\<leftarrow\>f<rsup|<around*|(|i|)>><around*|(|A<rsup|<around*|(|i|)>>|)>>
+
+    <with|font-series|bold|end>
+
+    <with|font-series|bold|return ><math|u<rsup|<around*|(|n|)>>>
+  </named-algorithm>
+
+  Per la fase di backward utilizziamo una tabella <em|grad> per memorizza i
+  valori già calcolati di\ 
+
+  <math|<frac|\<partial\>u<rsup|<around*|(|n|)>>|\<partial\>u<rsup|<around*|(|i|)>>>,\<forall\>u<rsup|<around*|(|i|)>>>.
+  Per convenienza sia <math|children<around*|(|j|)><script-assign><around*|{|i<around*|\||j\<in\>Parent<around*|(|u<rsup|<around*|(|i|)>>|)>|\<nobracket\>>|}>>.
+
+  <\named-algorithm|Backward propagation (solo con variabili scalari)>
+    Run forward pass to evalute variables
+
+    Initialize empy lookup table <em|grad>
+
+    <math|grad<around*|[|u<rsup|<around*|(|n|)>>|]>\<leftarrow\>1>
+
+    <with|font-series|bold|for> <math|j=n-1,\<ldots\>,1>
+    <with|font-series|bold|do>
+
+    <space|1em>/*Apply chain rule*/
+
+    <space|1em><math|grad<around*|[|u<rsup|<around*|(|j|)>>|]>\<leftarrow\><big|sum><rsub|i\<in\>children<around*|(|j|)>>grad<around*|[|u<rsup|<around*|(|i|)>>|]>*<frac|\<partial\>u<rsup|<around*|(|i|)>>|\<partial\>u<rsup|<around*|(|j|)>>>>
+
+    <with|font-series|bold|end>
+
+    <with|font-series|bold|return> {<math|grad<around*|[|u<rsup|<around*|(|i|)>>|]>,i=1,\<ldots\>,k>}
+  </named-algorithm>
+
+  <subsubsection|Backpropagation per le reti neurali>
+
+  Assumiamo per semplicità che una singola istanza di training
+  <with|font-series|bold|<math|x>> e l'etichetta associata
+  <math|<with|font-series|bold|t>> siano utilizzate per calcolare la funzione
+  di costo <math|J<around*|(|<with|font-series|bold|\<theta\>>|)>> e vogliamo
+  calcoalre <math|\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<with|font-series|bold|\<theta\>>|)>>.
+
+  <\named-algorithm|Forward pass>
+    <math|<with|font-series|bold|h><rsup|<around*|(|0|)>>\<leftarrow\><with|font-series|bold|x>>
+    /*Uscita del livello di input senza funzione di attivazione */
+
+    <with|font-series|bold|for> <math|k=1,\<ldots\>,L>
+    <with|font-series|bold|do> /*Itero su tutti i livelli*/
+
+    <space|1em><math|<with|font-series|bold|a><rsup|<around*|(|k|)>>\<leftarrow\>W<rsup|<around*|(|k|)>>*<with|font-series|bold|h><rsup|<around*|(|k-1|)>>+<with|font-series|bold|b><rsup|<around*|(|k|)>>>
+    /*Calcolo l'usita del livello k senza funzione di attivazione*/
+
+    <space|1em><math|<with|font-series|bold|h><rsup|<around*|(|k|)>>\<leftarrow\>f<rsup|<around*|(|k|)>><around*|(|<with|font-series|bold|a><rsup|<around*|(|k|)>>|)>>
+    /*Applico la funzione di attivazione*/
+
+    <with|font-series|bold|end>
+
+    <math|<with|font-series|bold|y>\<leftarrow\><with|font-series|bold|h><rsup|<around*|(|L|)>>>
+    /*Imposto l'uscita della NN */
+
+    <with|font-series|bold|return> <math|J=L<around*|(|<with|font-series|bold|y>,<with|font-series|bold|t>|)>+\<lambda\>*\<Omega\><around*|(|<with|font-series|bold|\<theta\>>|)>>
+  </named-algorithm>
+
+  <\algorithm>
+    1. <math|<with|font-series|bold|g>\<leftarrow\>\<nabla\><rsub|<with|font-series|bold|y>>J=\<nabla\><rsub|y>L<around*|(|<with|font-series|bold|y>,<with|font-series|bold|t>|)>>
+
+    2. <with|font-series|bold|for> <math|k=L,\<ldots\>,2,1>
+    <with|font-series|bold|do>
+
+    3.<space|2em><math|<with|font-series|bold|g>\<leftarrow\>\<nabla\><rsub|<with|font-series|bold|a><rsup|<around*|(|k|)>>>J=<with|font-series|bold|g>\<odot\>f<rsup|<around*|(|k|)><rprime|'>><around*|(|<with|font-series|bold|a><rsup|<around*|(|k|)>>|)>>
+  </algorithm>
+
+  Spiegazione backpropagation:
+
+  <\enumerate>
+    <item>La variabile <math|<with|font-series|bold|g>> viene inizializzata
+    nel caso semplice in cui non è presente il termine di regolarizzazione e
+    viene utilizzata per propagare all'indietro il gradiente.
+
+    <item>Iteriamo all'indietro partendo dal livello nascosto <math|L-esimo>
+    fino al primo. All'inizio di ogni iterazione
+    <math|<with|font-series|bold|g>> contiene il gradiente della funzione di
+    costo rispetto al <math|k-esimo> livello.\ 
+
+    <item>Calcoliamo il gradiente rispetto al pre-activation value
+  </enumerate>
+
   <section|Decomposizione bias-varianza>
 
   Assumiamo che: <math|t=g<around*|(|x|)>+\<epsilon\>>, dove
@@ -2206,23 +2386,27 @@
     <associate|auto-41|<tuple|8.4|21>>
     <associate|auto-42|<tuple|8.5|21>>
     <associate|auto-43|<tuple|8.5.1|21>>
-    <associate|auto-44|<tuple|9|22>>
-    <associate|auto-45|<tuple|10|22>>
-    <associate|auto-46|<tuple|10.1|22>>
-    <associate|auto-47|<tuple|10.2|23>>
-    <associate|auto-48|<tuple|10.2.1|23>>
-    <associate|auto-49|<tuple|10.2.2|23>>
+    <associate|auto-44|<tuple|8.5.2|22>>
+    <associate|auto-45|<tuple|8.5.3|22>>
+    <associate|auto-46|<tuple|8.5.4|22>>
+    <associate|auto-47|<tuple|8.5.5|23>>
+    <associate|auto-48|<tuple|9|23>>
+    <associate|auto-49|<tuple|10|23>>
     <associate|auto-5|<tuple|1.3.1|4>>
-    <associate|auto-50|<tuple|10.2.3|23>>
-    <associate|auto-51|<tuple|10.2.4|24>>
-    <associate|auto-52|<tuple|10.2.5|26>>
-    <associate|auto-53|<tuple|10.2.6|27>>
-    <associate|auto-54|<tuple|11|27>>
-    <associate|auto-55|<tuple|11.1|27>>
-    <associate|auto-56|<tuple|11.2|28>>
-    <associate|auto-57|<tuple|12|29>>
-    <associate|auto-58|<tuple|12.1|30>>
+    <associate|auto-50|<tuple|10.1|23>>
+    <associate|auto-51|<tuple|10.2|24>>
+    <associate|auto-52|<tuple|10.2.1|26>>
+    <associate|auto-53|<tuple|10.2.2|27>>
+    <associate|auto-54|<tuple|10.2.3|27>>
+    <associate|auto-55|<tuple|10.2.4|27>>
+    <associate|auto-56|<tuple|10.2.5|28>>
+    <associate|auto-57|<tuple|10.2.6|29>>
+    <associate|auto-58|<tuple|11|30>>
+    <associate|auto-59|<tuple|11.1|?>>
     <associate|auto-6|<tuple|1.3.2|4>>
+    <associate|auto-60|<tuple|11.2|?>>
+    <associate|auto-61|<tuple|12|?>>
+    <associate|auto-62|<tuple|12.1|?>>
     <associate|auto-7|<tuple|1.3.3|4>>
     <associate|auto-8|<tuple|2|4>>
     <associate|auto-9|<tuple|2.1|5>>
@@ -2230,10 +2414,12 @@
     <associate|footnote-2|<tuple|2|7>>
     <associate|footnote-3|<tuple|3|21>>
     <associate|footnote-4|<tuple|4|21>>
+    <associate|footnote-5|<tuple|5|?>>
     <associate|footnr-1|<tuple|1|3>>
     <associate|footnr-2|<tuple|2|7>>
     <associate|footnr-3|<tuple|3|21>>
     <associate|footnr-4|<tuple|4|21>>
+    <associate|footnr-5|<tuple|5|?>>
   </collection>
 </references>
 
