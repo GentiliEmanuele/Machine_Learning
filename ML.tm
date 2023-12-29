@@ -266,25 +266,45 @@
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-65>>
 
-    <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>Metriche
-    di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-66><vspace|0.5fn>
+    <with|par-left|2tab|11.3.2<space|2spc>Nesterov momentum
+    \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-66>>
 
-    <with|par-left|1tab|12.1<space|2spc>Confusion matrix
+    <with|par-left|1tab|11.4<space|2spc>Algoritmi: AdaGrad
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-67>>
 
-    <with|par-left|1tab|12.2<space|2spc>Falsi positivi e falsi negativi
+    <with|par-left|1tab|11.5<space|2spc>Algoritmi: RMSProp
     <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
     <no-break><pageref|auto-68>>
 
+    <with|par-left|2tab|11.5.1<space|2spc>RMSProp con Nestorov momentum
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-69>>
+
+    <with|par-left|1tab|11.6<space|2spc>Adam
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-70>>
+
+    <vspace*|1fn><with|font-series|bold|math-font-series|bold|12<space|2spc>Metriche
+    di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-71><vspace|0.5fn>
+
+    <with|par-left|1tab|12.1<space|2spc>Confusion matrix
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-72>>
+
+    <with|par-left|1tab|12.2<space|2spc>Falsi positivi e falsi negativi
+    <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+    <no-break><pageref|auto-73>>
+
     <vspace*|1fn><with|font-series|bold|math-font-series|bold|13<space|2spc>Clustering
     - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-69><vspace|0.5fn>
+    <no-break><pageref|auto-74><vspace|0.5fn>
 
     <with|par-left|1tab|13.1<space|2spc>Determinare il valore ottimo di K
     -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-    <no-break><pageref|auto-70>>
+    <no-break><pageref|auto-75>>
   </table-of-contents>
 
   <new-page>
@@ -2362,6 +2382,281 @@
     <with|font-series|bold|end>
   </named-algorithm>
 
+  <subsubsection|Nesterov momentum >
+
+  E' una variante del precedente algoritmo con il momentum in cui il
+  gradiente viene valutato <with|font-series|bold|dopo> aver applicato la
+  velocità corrente.
+
+  <\named-algorithm|SDG all'epoca <math|k> con nesterov momentum>
+    <with|font-series|bold|while> criterio di arresto non è soddisfatto
+    <with|font-series|bold|do>
+
+    <space|1em>Campiona un minibatch <math|B> casualmente dal training set
+
+    <space|1em><math|<wide|<with|font-series|bold|\<theta\>>|~>\<leftarrow\><with|font-series|bold|\<theta\>>+\<beta\>*<with|font-series|bold|v>>
+
+    <space|1em><math|<with|font-series|bold|g
+    >\<leftarrow\><frac|1|<around*|\||B|\|>>*\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<with|font-series|bold|<wide|\<theta\>|~>>|)>>
+
+    <space|1em><math|<with|font-series|bold|v\<leftarrow\>>\<beta\>*<with|font-series|bold|v>-\<alpha\><rsub|k>*<with|font-series|bold|g>>
+
+    <space|1em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>+<with|font-series|bold|v>>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
+
+  <subsection|Algoritmi: AdaGrad>
+
+  Il learning rate è uno degli hyperparametri più difficili da scegliere. Il
+  momentum mitigra alcuni problemi ma introduce altri hyperparametri.\ 
+
+  L'idea è quindi quella di utilizzare dei learning rate separati per ogni
+  parametro e adattarli automaticamente.
+
+  I parametri vengono aggiornati con un valore inversamente proporzionale
+  alla radice quadrata della somma di tutti i valori dei quadrati storici del
+  gradiente. A delle buone proprietà teoriche ma è difficile da usare in
+  pratica per l'allenamento delle NN.
+
+  <\named-algorithm|AdaGrad>
+    <math|<with|font-series|bold|r>\<leftarrow\>0>
+
+    <with|font-series|bold|while> criterio di arresto non è soddisfatto
+    <with|font-series|bold|do>
+
+    <space|1em>Campiona un minibatch <math|B> casualmente dal training set
+
+    <space|1em><math|<with|font-series|bold|g
+    >\<leftarrow\><frac|1|<around*|\||B|\|>>*\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<with|font-series|bold|\<theta\>>|)>>
+
+    <space|1em><math|<with|font-series|bold|r>\<leftarrow\><with|font-series|bold|r>+<with|font-series|bold|g>\<odot\><with|font-series|bold|g>>
+
+    <space|1em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>-<frac|\<alpha\>|\<delta\>+<sqrt|<with|font-series|bold|r>>>\<odot\><with|font-series|bold|g>>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
+
+  Dove con
+
+  <\itemize>
+    <item><math|\<odot\>> denotiamo le operazioni elemento per elemento
+
+    <item><math|\<delta\>> è una costante piccolare (tipicamente
+    <math|10<rsup|-7>>)
+  </itemize>
+
+  <subsection|Algoritmi: RMSProp>
+
+  E' uno degli algoritmi più utilizzati. In questo algoritmo l'accumulo del
+  gradiente diventa una media mobile esponenziale. I problemi non convessi
+  sono gestiti meglio rispetto agli altri algoritmi. C'è un nuovo
+  iperparametro <math|\<rho\>> che rappresenta la scala di lunghezza della
+  media mobile.
+
+  <\named-algorithm|RMSProp>
+    <math|<with|font-series|bold|r>\<leftarrow\>0>
+
+    <with|font-series|bold|while> criterio di arresto non è soddisfatto
+    <with|font-series|bold|do>
+
+    <space|1em>Campiona un minibatch <math|B> casualmente dal training set
+
+    <space|1em><math|<with|font-series|bold|g
+    >\<leftarrow\><frac|1|<around*|\||B|\|>>*\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<with|font-series|bold|\<theta\>>|)>>
+
+    <space|1em><math|<with|font-series|bold|r>\<leftarrow\>\<rho\>*<with|font-series|bold|r>+<around*|(|1-\<rho\>|)>*<with|font-series|bold|g>\<odot\><with|font-series|bold|g>>
+
+    <space|1em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>-<frac|\<alpha\>|<sqrt|\<delta\>+<with|font-series|bold|r>>>\<odot\><with|font-series|bold|g>>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
+
+  In questo caso la costante <math|\<delta\>> tipicamenente vale
+  <math|10<rsup|-6>>.
+
+  <subsubsection|RMSProp con Nestorov momentum>
+
+  <\named-algorithm|RMSProp con Nestorov momentum>
+    <math|<with|font-series|bold|r>\<leftarrow\>0>
+
+    <with|font-series|bold|while> criterio di arresto non è soddisfatto
+    <with|font-series|bold|do>
+
+    <space|1em>Campiona un minibatch <math|B> casualmente dal training set
+
+    <space|1em><math|<wide|<with|font-series|bold|\<theta\>>|~>\<leftarrow\><with|font-series|bold|\<theta\>>+\<beta\>*<with|font-series|bold|v>>
+
+    <space|1em><math|<with|font-series|bold|g
+    >\<leftarrow\><frac|1|<around*|\||B|\|>>*\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<wide|<with|font-series|bold|\<theta\>>|~>|)>>
+
+    <space|1em><math|<with|font-series|bold|r>\<leftarrow\>\<rho\>*<with|font-series|bold|r>+<around*|(|1-\<rho\>|)>*<with|font-series|bold|g>\<odot\><with|font-series|bold|g>>
+
+    <space|1em><math|<with|font-series|bold|v>\<leftarrow\>\<beta\>*<with|font-series|bold|v>-<frac|a|<sqrt|<with|font-series|bold|r>+\<delta\>>>\<odot\><with|font-series|bold|g>>
+
+    <space|1em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>+<with|font-series|bold|v>>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
+
+  <subsection|Adam>
+
+  Adam sta per <em|Adaptive moments> e può essere visto come una variante di
+  RMSProp con il momento. Adam calcola i learning rate adattivi individuali
+  per diversi parametri in base al momento e ai secondi momenti stiamati dei
+  gradienti:
+
+  <\named-algorithm|Adam>
+    <math|t\<leftarrow\>0,<with|font-series|bold|v>\<leftarrow\>0,<with|font-series|bold|r>\<leftarrow\>0>
+
+    <with|font-series|bold|while> criterio di arresto non è soddisfatto
+    <with|font-series|bold|do>
+
+    <space|1em>Campiona un minibatch <math|B> casualmente dal training set
+
+    <space|1em><math|<with|font-series|bold|g
+    >\<leftarrow\><frac|1|<around*|\||B|\|>>*\<nabla\><rsub|<with|font-series|bold|\<theta\>>>J<around*|(|<with|font-series|bold|\<theta\>>|)>>
+
+    <space|1em><math|t\<leftarrow\>t+1>
+
+    <space|1em><math|<with|font-series|bold|v>\<leftarrow\>\<beta\><rsub|1>*<with|font-series|bold|v>+<around*|(|1-\<beta\><rsub|1>|)>*<with|font-series|bold|g>>
+    /*Momentum update*/
+
+    <space|1em><math|<with|font-series|bold|r>\<leftarrow\>\<beta\><rsub|2>*<with|font-series|bold|r>+<around*|(|1-\<beta\><rsub|2>|)>*<with|font-series|bold|g>\<odot\><with|font-series|bold|g>>
+    /*2nd moment update*/
+
+    <space|1em>/*Init bias correction*/
+
+    <space|1em><math|<wide|<with|font-series|bold|v>|^>\<leftarrow\><frac|<with|font-series|bold|v>|1-\<beta\><rsub|1><rsup|t>>>
+
+    <space|1em><math|<wide|<with|font-series|bold|r>|^>\<leftarrow\><frac|<with|font-series|bold|r>|1-\<beta\><rsup|t><rsub|2>*<rsup|>>>
+
+    <space|1em><math|<with|font-series|bold|\<theta\>>\<leftarrow\><with|font-series|bold|\<theta\>>-\<alpha\>*<frac|<wide|<with|font-series|bold|v>|^>|<sqrt|<wide|r|^>>+\<delta\>>>
+
+    <with|font-series|bold|end>
+  </named-algorithm>
+
+  I valori tipici sono i seguenti: <math|\<beta\><rsub|1>=0.9> e
+  <math|\<beta\><rsub|2>=0.999>.
+
+  <subsection|Inizializzazione dei parametri>
+
+  Il modo in cui i parametri vengono inizializzati determina il punto
+  iniziale (nello spazio dei parametri) in cui inizia l'ottimizzazione. Tale
+  punto iniziale determina se l'algoritmo converge, infatti, alcuni punti
+  iniziali sono così instabili che l'algoritmo incontra delle difficoltà.\ 
+
+  Quando l'apprendimento converge, il punto iniziale può determinare la
+  velocità di convergenza e se viene raggiunto un punto con un costo basso o
+  alto.\ 
+
+  Ci sono diverse euristiche proposte, tipicamente random-based:
+
+  <\itemize>
+    <item><with|font-series|bold|Random normal/uniform>: i pesi vengono
+    campionati casualmente da una distribuzione data.
+
+    <item><with|font-series|bold|Glorot> (o Xavier)
+    <with|font-series|bold|method>: i pesi vengono campionati da una
+    distribuzione gaussiana con <math|\<mu\>=0> e
+    <math|\<sigma\><rsup|2>=<frac|2|n<rsub|in>+n<rsub|out>>>. Dove
+    <math|n<rsub|in>=#input> e <math|n<rsub|out>=#output> nel livello.\ 
+
+    <item><with|font-series|bold|He> inizializzation: i pesi, anche in questo
+    caso, vengono campionati da una distribuzione ma, in questo caso,
+    <math|\<mu\>=0>, <math|\<sigma\><rsup|2>=<frac|2|n<rsub|in>>>. Dove
+    <math|n<rsub|in>> ha lo stesso significato del precedente metodo.
+
+    Tipicamente è una scelta migliore rispetto a Glorot se si usa una
+    funzione di attivazione ReLU.
+  </itemize>
+
+  <subsection|Batch normalizzation>
+
+  Batch normalizzation (BN) è ua tecnica (non un algoritmo) per migliorare la
+  convergenza delle DNN. Produce anche un effetto di regolarizzazione. BN
+  viene applicato ai singoli livelli (o a tutti loro).
+
+  Consideriamo un minibatch <math|B> e un input
+  <math|<with|font-series|bold|x>\<in\>B>:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|BN<around*|(|<with|font-series|bold|x>|)>>|<cell|=>|<cell|<frac|<with|font-series|bold|x>-<with|font-series|bold|<wide|<with|font-series|bold|\<mu\>>|^><rsub|B><rsub|>>|<with|font-series|bold|<wide|\<sigma\><rsub|>|^><rsub|B>>>>>>>
+  </eqnarray*>
+
+  dove <math|<wide|<with|font-series|bold|\<mu\>>|^><rsub|B><rsub|>> e
+  <math|<with|font-series|bold|<wide|\<sigma\><rsub|>|^><rsub|>><rsub|B>>
+  denotano la media e la varianza del minibatch. Il minibatch risultante avra
+  media nulla e varianza unitaria.
+
+  <\remark>
+    La media e la varianza sono vettori con le stesse dimensioni di
+    <with|font-series|bold|<math|x>>
+  </remark>
+
+  In pratica BN viene applicata ai livelli nascosti. L'output di un livello
+  nascosto visto fino ad ora è il seguente:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|font-series|bold|h>>|<cell|=>|<cell|\<phi\><around*|(|W*<with|font-series|bold|x>+<with|font-series|bold|b>|)>>>>>
+  </eqnarray*>
+
+  Applicando BN diventa:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|font-series|bold|h>>|<cell|=>|<cell|\<phi\><around*|(|BN<around*|(|W*<with|font-series|bold|x>+<with|font-series|bold|b>|)>|)>>>>>
+  </eqnarray*>
+
+  Anche se la precedente espressione è quella che troviamo nel paper
+  originale, molte implementazioni utilizzano la seguente espressione:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|<with|font-series|bold|h>>|<cell|=>|<cell|BN<around*|(|\<phi\><around*|(|W*<with|font-series|bold|x>+<with|font-series|bold|b>|)>|)>>>>>
+  </eqnarray*>
+
+  Per la definizione di BN data il risultato della precedente espressione
+  avrà media nulla e varianza unitaria. Ma possiamo dare una definizione più
+  generale di batch normalizzation:
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|BN<around*|(|<with|font-series|bold|x>|)>>|<cell|=>|<cell|<with|font-series|bold|\<gamma\>>*<frac|<with|font-series|bold|x>-<with|font-series|bold|<wide|<with|font-series|bold|\<mu\>>|^><rsub|B><rsub|>>|<with|font-series|bold|<wide|\<sigma\><rsub|>|^><rsub|B>>>+<with|font-series|bold|\<beta\>>>>>>
+  </eqnarray*>
+
+  dove il vettore <math|<with|font-series|bold|\<gamma\>>> e
+  <math|<with|font-series|bold|\<beta\>>> sono dei parametri da imparare come
+  parte del training.
+
+  Ci si può domandare: perché abbiamo forzato la media a essere nulla e
+  adesso stiamo aggiungendo un parametro che consente una media qualunque?
+
+  Per come abbiamo definito BN abbiamo ottenuto che:
+
+  <\itemize>
+    <item>Possiamo rappresentare la stessa famiglia di funzioni di prima, ma
+    ora ne abbiamo diverse e sono anche più facili che vengono imparate
+    dinamicamente.
+
+    <item>La media e la varianza dipendono solamente da
+    <math|<with|font-series|bold|\<gamma\>>> e
+    <math|<with|font-series|bold|\<beta\>>>, mentre senza BN dipendevano
+    dalla complicata interazione dei parametri in tutti i precedenti livelli.
+  </itemize>
+
+  Le formule presentante fino ad ora descrivono come lavora BN durante la
+  fase di training. Il comportamento è leggermente diverso durante
+  l'inferenza perché deve essere in grado di lavorare senza minibatch.\ 
+
+  Durante l'inferenza la normalizzazione usa una media mobile della media e
+  della deviazione standard dei minibatch visti durante l'allenamento.
+
+  <section|Reti neurali convoluzionali>
+
+  <subsection|Motivazione>
+
+  \;
+
+  \;
+
   <section|Metriche di valutazione>
 
   La funzione dei costi <math|J> è utilizzata per misurare le performance di
@@ -2586,82 +2881,91 @@
     <associate|auto-1|<tuple|1|3>>
     <associate|auto-10|<tuple|2.2|6>>
     <associate|auto-11|<tuple|2.2.1|6>>
-    <associate|auto-12|<tuple|2.2.2|6>>
-    <associate|auto-13|<tuple|2.2.3|6>>
+    <associate|auto-12|<tuple|2.2.2|7>>
+    <associate|auto-13|<tuple|2.2.3|7>>
     <associate|auto-14|<tuple|2.2.4|7>>
     <associate|auto-15|<tuple|3|8>>
     <associate|auto-16|<tuple|3.1|8>>
     <associate|auto-17|<tuple|3.2|8>>
-    <associate|auto-18|<tuple|3.3|8>>
+    <associate|auto-18|<tuple|3.3|9>>
     <associate|auto-19|<tuple|3.3.1|9>>
     <associate|auto-2|<tuple|1.1|3>>
-    <associate|auto-20|<tuple|4|9>>
+    <associate|auto-20|<tuple|4|10>>
     <associate|auto-21|<tuple|4.1|10>>
     <associate|auto-22|<tuple|5|11>>
     <associate|auto-23|<tuple|5.1|11>>
-    <associate|auto-24|<tuple|5.2|11>>
+    <associate|auto-24|<tuple|5.2|12>>
     <associate|auto-25|<tuple|5.3|12>>
-    <associate|auto-26|<tuple|5.3.1|12>>
+    <associate|auto-26|<tuple|5.3.1|13>>
     <associate|auto-27|<tuple|5.3.2|14>>
-    <associate|auto-28|<tuple|5.3.3|15>>
+    <associate|auto-28|<tuple|5.3.3|16>>
     <associate|auto-29|<tuple|6|16>>
-    <associate|auto-3|<tuple|1.2|3>>
-    <associate|auto-30|<tuple|7|16>>
+    <associate|auto-3|<tuple|1.2|4>>
+    <associate|auto-30|<tuple|7|17>>
     <associate|auto-31|<tuple|7.1|17>>
-    <associate|auto-32|<tuple|7.2|17>>
+    <associate|auto-32|<tuple|7.2|18>>
     <associate|auto-33|<tuple|8|18>>
-    <associate|auto-34|<tuple|8.1|19>>
-    <associate|auto-35|<tuple|8.1.1|19>>
-    <associate|auto-36|<tuple|8.1.2|19>>
+    <associate|auto-34|<tuple|8.1|20>>
+    <associate|auto-35|<tuple|8.1.1|20>>
+    <associate|auto-36|<tuple|8.1.2|20>>
     <associate|auto-37|<tuple|8.1.3|20>>
-    <associate|auto-38|<tuple|8.1.4|20>>
-    <associate|auto-39|<tuple|8.2|20>>
+    <associate|auto-38|<tuple|8.1.4|21>>
+    <associate|auto-39|<tuple|8.2|21>>
     <associate|auto-4|<tuple|1.3|4>>
     <associate|auto-40|<tuple|8.3|21>>
-    <associate|auto-41|<tuple|8.4|21>>
+    <associate|auto-41|<tuple|8.4|22>>
     <associate|auto-42|<tuple|8.5|22>>
     <associate|auto-43|<tuple|8.5.1|22>>
-    <associate|auto-44|<tuple|8.5.2|22>>
+    <associate|auto-44|<tuple|8.5.2|23>>
     <associate|auto-45|<tuple|8.5.3|23>>
     <associate|auto-46|<tuple|8.5.4|23>>
-    <associate|auto-47|<tuple|8.5.5|23>>
-    <associate|auto-48|<tuple|8.5.6|24>>
+    <associate|auto-47|<tuple|8.5.5|24>>
+    <associate|auto-48|<tuple|8.5.6|25>>
     <associate|auto-49|<tuple|8.5.7|25>>
     <associate|auto-5|<tuple|1.3.1|4>>
     <associate|auto-50|<tuple|8.5.8|25>>
-    <associate|auto-51|<tuple|9|25>>
+    <associate|auto-51|<tuple|9|26>>
     <associate|auto-52|<tuple|10|26>>
     <associate|auto-53|<tuple|10.1|26>>
-    <associate|auto-54|<tuple|10.2|26>>
-    <associate|auto-55|<tuple|10.2.1|26>>
+    <associate|auto-54|<tuple|10.2|27>>
+    <associate|auto-55|<tuple|10.2.1|27>>
     <associate|auto-56|<tuple|10.2.2|27>>
     <associate|auto-57|<tuple|10.2.3|27>>
     <associate|auto-58|<tuple|10.2.4|28>>
     <associate|auto-59|<tuple|10.2.5|30>>
     <associate|auto-6|<tuple|1.3.2|4>>
-    <associate|auto-60|<tuple|10.2.6|30>>
+    <associate|auto-60|<tuple|10.2.6|31>>
     <associate|auto-61|<tuple|11|31>>
     <associate|auto-62|<tuple|11.1|31>>
     <associate|auto-63|<tuple|11.2|31>>
-    <associate|auto-64|<tuple|11.3|31>>
+    <associate|auto-64|<tuple|11.3|32>>
     <associate|auto-65|<tuple|11.3.1|32>>
-    <associate|auto-66|<tuple|12|32>>
-    <associate|auto-67|<tuple|12.1|32>>
-    <associate|auto-68|<tuple|12.2|33>>
-    <associate|auto-69|<tuple|13|34>>
+    <associate|auto-66|<tuple|11.3.2|32>>
+    <associate|auto-67|<tuple|11.4|32>>
+    <associate|auto-68|<tuple|11.5|33>>
+    <associate|auto-69|<tuple|11.5.1|33>>
     <associate|auto-7|<tuple|1.3.3|4>>
-    <associate|auto-70|<tuple|13.1|35>>
-    <associate|auto-8|<tuple|2|4>>
+    <associate|auto-70|<tuple|11.6|33>>
+    <associate|auto-71|<tuple|11.7|34>>
+    <associate|auto-72|<tuple|11.8|34>>
+    <associate|auto-73|<tuple|12|34>>
+    <associate|auto-74|<tuple|12.1|35>>
+    <associate|auto-75|<tuple|13|35>>
+    <associate|auto-76|<tuple|13.1|36>>
+    <associate|auto-77|<tuple|13.2|37>>
+    <associate|auto-78|<tuple|14|?>>
+    <associate|auto-79|<tuple|14.1|?>>
+    <associate|auto-8|<tuple|2|5>>
     <associate|auto-9|<tuple|2.1|5>>
     <associate|footnote-1|<tuple|1|3>>
-    <associate|footnote-2|<tuple|2|7>>
-    <associate|footnote-3|<tuple|3|21>>
-    <associate|footnote-4|<tuple|4|21>>
+    <associate|footnote-2|<tuple|2|8>>
+    <associate|footnote-3|<tuple|3|22>>
+    <associate|footnote-4|<tuple|4|22>>
     <associate|footnote-5|<tuple|5|23>>
     <associate|footnr-1|<tuple|1|3>>
-    <associate|footnr-2|<tuple|2|7>>
-    <associate|footnr-3|<tuple|3|21>>
-    <associate|footnr-4|<tuple|4|21>>
+    <associate|footnr-2|<tuple|2|8>>
+    <associate|footnr-3|<tuple|3|22>>
+    <associate|footnr-4|<tuple|4|22>>
     <associate|footnr-5|<tuple|5|23>>
   </collection>
 </references>
@@ -2933,25 +3237,53 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-65>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>Metriche
-      di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-66><vspace|0.5fn>
+      <with|par-left|<quote|2tab>|11.3.2<space|2spc>Nesterov momentum
+      \ <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-66>>
 
-      <with|par-left|<quote|1tab>|12.1<space|2spc>Confusion matrix
+      <with|par-left|<quote|1tab>|11.4<space|2spc>Algoritmi: AdaGrad
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-67>>
 
+      <with|par-left|<quote|1tab>|11.5<space|2spc>Algoritmi: RMSProp
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-68>>
+
+      <with|par-left|<quote|2tab>|11.5.1<space|2spc>RMSProp con Nestorov
+      momentum <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-69>>
+
+      <with|par-left|<quote|1tab>|11.6<space|2spc>Adam
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-70>>
+
+      <with|par-left|<quote|1tab>|11.7<space|2spc>Inizializzazione dei
+      parametri <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-71>>
+
+      <with|par-left|<quote|1tab>|11.8<space|2spc>Batch normalizzation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-72>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|12<space|2spc>Metriche
+      di valutazione> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-73><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|12.1<space|2spc>Confusion matrix
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-74>>
+
       <with|par-left|<quote|1tab>|12.2<space|2spc>Falsi positivi e falsi
       negativi <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-68>>
+      <no-break><pageref|auto-75>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|13<space|2spc>Clustering
       - Unsupervised learning> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-69><vspace|0.5fn>
+      <no-break><pageref|auto-76><vspace|0.5fn>
 
       <with|par-left|<quote|1tab>|13.1<space|2spc>Determinare il valore
       ottimo di K -Elbow method <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-70>>
+      <no-break><pageref|auto-77>>
     </associate>
   </collection>
 </auxiliary>
